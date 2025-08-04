@@ -1,4 +1,4 @@
-const apiUrl = "/api?city="; 
+const apiUrl = "/api/weather?city="; 
 
 const searchBox = document.querySelector('.search input');
 const searchBtn = document.querySelector('.search button');
@@ -39,3 +39,4 @@ async function checkWeather(city) {
 searchBtn.addEventListener('click', () => {
     checkWeather(searchBox.value);
 });
+
