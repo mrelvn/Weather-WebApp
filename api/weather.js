@@ -1,11 +1,22 @@
 export default async function handler(req, res) {
-  const city = req.query.city;
-  const API_KEY = "78afb45c81c660fb53428473251177bc"; 
+    const apiKey = process.env.WEATHER_API_KEY; 
+    const { city } = req.query;
 
-  const url = https://api.openweathermap.org/data/2.5/weather?units=metric&q=
+    if (!city) {
+        return res.status(400).json({ error: "City is required" });
+    }
 
-  const response = await fetch(url);
-  const data = await response.json();
+    const apiUrl = https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric;
 
-  res.status(200).json(data);
+    try {
+        const response = await fetch(apiUrl);
+        if (!response.ok) {
+            return res.status(response.status).json({ error: "Failed to fetch weather" });
+        }
+
+        const data = await response.json();
+        res.status(200).json(data);
+    } catch (error) {
+        res.status(500).json({ error: "Internal Server Error" });
+    }
 }
