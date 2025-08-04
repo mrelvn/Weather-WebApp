@@ -4,8 +4,8 @@ A responsive and modern weather application that displays real-time weather info
 
 
 ## 🔗 Live Demo
-🌐 [View App](https://your-vercel-project.vercel.app)  
-📁 [GitHub Repository](https://github.com/yourusername/weather-app)
+🌐 [View App](https://weather-web-app-nu-eight.vercel.app/)  
+📁 [GitHub Repository](https://github.com/mrelvn/Weather-WebApp)
 
 
 ## ✨ Features
