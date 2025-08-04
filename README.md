@@ -1,6 +1,6 @@
 # 🌦 Weather App
 
-A responsive and modern weather application that displays real-time weather information for any city using the OpenWeatherMap API. Designed with simplicity, speed, and clean UI in mind — deployed seamlessly on *Vercel* with secure backend routing.
+A responsive and modern weather application named "*DailyClimate*" that displays real-time weather information for any city using the OpenWeatherMap API. Designed with simplicity, speed, and clean UI in mind — deployed seamlessly on *Vercel* with secure backend routing.
 
 
 ## 🔗 Live Demo
