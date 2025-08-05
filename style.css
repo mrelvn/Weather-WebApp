@@ -18,7 +18,7 @@ body {
 .card {
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(130deg, #ef8fd8, #9018f2);
+    background: linear-gradient(130deg, #2142e9, #2bc4f2);
     color: #fff;
     margin: 70px auto 0;
     border-radius: 20px;
@@ -194,3 +194,4 @@ html {
         font-size: 20px;
     }
 }
+
